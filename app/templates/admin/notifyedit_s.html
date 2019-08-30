@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    
+    <title>管理平台 | </title>
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/plugins/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/static/plugins/bootstrap-slider/slider.css">
+    <link rel="stylesheet" href="/static/plugins/pace/pace.min.css">
+    <link rel="stylesheet" href="/static/plugins/bootstrap-switch/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="/static/plugins/select2/select2.min.css">
+    
+    <link rel="stylesheet" href="/static/plugins/adminlte/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/static/plugins/adminlte/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="/static/css/global.css">
+    <!--[if lt IE 9]>
+    <script src="plugins/html5shiv.min.js"></script>
+    <script src="plugins/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <!--头部-->
+    <header class="main-header">
+        <a href="/index" class="logo">
+            <span class="logo-mini"><b>N</b></span>
+            <span class="logo-lg"><b>管理平台</b></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="/static/images/avatar.jpg" class="user-image"
+                                 alt="User Image">
+                            <span class="hidden-xs">admin</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="user-header">
+                                <img src="/static/images/avatar.jpg"
+                                     class="img-circle" alt="User Image">
+                                <p>
+                                    <span>?????</span>
+                                    <small>admin@admin.com</small>
+                                </p>
+                            </li>
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="/index" class="btn btn-default btn-flat">统计信息</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="/logout" class="btn btn-default btn-flat">退出登录</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--侧边栏-->
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <ul class="sidebar-menu">
+                <li class="header">功能导航</li>
+                <li>
+                    <a href="/index">
+                        <i class="fa fa-home"></i>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        <span>XX管理</span>
+                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/notifyedit"><i class="fa fa-circle-o"></i> 编辑</a></li>
+                        <li><a href="/notifylist"><i class="fa fa-circle-o"></i> 查询</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-bug"></i>
+                        <span>XX管理</span>
+                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/notifyedit"><i class="fa fa-circle-o"></i> 编辑</a></li>
+                        <li><a href="/notifylist"><i class="fa fa-circle-o"></i> 查询</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-send"></i>
+                        <span>XX管理</span>
+                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/notifyedit"><i class="fa fa-circle-o"></i> 编辑</a></li>
+                        <li><a href="/notifylist"><i class="fa fa-circle-o"></i> 查询</a></li>
+                    </ul>
+                </li>
+
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-cog"></i>
+                        <span>XX管理</span>
+                        <span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/notifyedit"><i class="fa fa-circle-o"></i> 功能点</a></li>
+                        <li><a href="/notifylist"><i class="fa fa-circle-o"></i> 功能点</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+    <div class="content-wrapper">
+        <!--导航栏-->
+        
+<section class="content-header">
+    <h1></h1>
+    <ol class="breadcrumb">
+        <li><i class="fa fa-dashboard"></i> 当前位置</li>
+        <li class="active"></li>
+        <li class="active"></li>
+    </ol>
+</section>
+
+        <!--正文-->
+        <section class="content">
+            
+<div class="box box-primary">
+    <form method="post">
+        <input id="csrf_token" name="csrf_token" type="hidden" value="IjJiMDYxMDVmYTk0MjI1YjVmZjE0YjE5YTA2MzM1OWUxMWE2NDIwMjYi.XWjlgg.H9hL56h9iLdliZV3uRKs0ZVGGzg">
+        <div class="box-header with-border">
+            
+        </div>
+
+        <div class="box-body">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label><label for="check_order">排序</label></label>
+                    <input class="slider form-control" id="check_order" name="check_order" placeholder="请输入 列表顺序" required type="text" value="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label><label for="notify_type">通知类型</label></label>
+                    <select class="form-control select2" id="notify_type" name="notify_type" placeholder="请输入" required><option value="MAIL">邮件通知</option><option value="SMS">短信通知</option></select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label><label for="notify_name">通知人姓名</label></label>
+                    <input class="form-control" id="notify_name" name="notify_name" placeholder="请输入" required type="text" value="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label><label for="notify_number">通知号码</label></label>
+                    <input class="form-control" id="notify_number" name="notify_number" placeholder="请输入" required type="text" value="">
+                </div>
+            </div>
+        </div>
+
+        <div class="box-footer">
+            <div class="col-md-12">
+                <input checked id="status" name="status" type="checkbox" value="y">
+                <input class="btn btn-primary pull-right" id="submit" name="submit" type="submit" value="提交">
+            </div>
+        </div>
+    </form>
+</div>
+
+
+        </section>
+    </div>
+    <!--页脚-->
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>版本号</b> 1.0.0
+        </div>
+        Copyright &copy; 2017 <a href="http://www.si-tech.com.cn">XXXX公司</a>
+    </footer>
+    <!--模态窗口-->
+    <div class="modal-wrapper">
+        <div id="alert-modal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                        <!--<span aria-hidden="true">&times;</span></button>-->
+                        <h4 class="modal-title">提示</h4>
+                    </div>
+                    <div class="modal-body">
+                        提示内容
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left btn-no" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-default btn-yes" data-dismiss="modal">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="/static/plugins/fastclick/fastclick.js"></script>
+<script src="/static/plugins/bootstrap-slider/bootstrap-slider.js"></script>
+<script src="/static/plugins/pace/pace.min.js"></script>
+<script src="/static/plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
+<script src="/static/plugins/select2/select2.full.min.js"></script>
+<script src="/static/plugins/adminlte/js/app.min.js"></script>
+<script src="/static/js/global.js"></script>
+
+<script>
+    function initPage() {
+        slide_value = $(".slider").val() == "" ? 50 : parseInt($(".slider").val());
+        $(".slider").slider({
+            id: "blue",
+            max: 100,
+            value: slide_value
+        });
+
+        switch_value = $('#status')[0].checked
+        $('#status').bootstrapSwitch({
+            state: switch_value,
+            onText: '生效',
+            offText: '失效'
+
+        });
+
+        $(".select2").select2();
+    }
+</script>
+
+</body>
+</html>
